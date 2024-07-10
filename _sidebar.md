@@ -7,5 +7,5 @@
 * [栈与队列](practice/6-队列.md)
 * [二叉树与递归](practice/7-二叉树.md)
 * [递归](practice/8-递归.md)
-* [动态规划](practice/8-动态规划.md)
-* [贪心](practice/8-贪心算法.md)
+* [动态规划](practice/9-动态.md)
+* [贪心算法](practice/10-贪心.md)
