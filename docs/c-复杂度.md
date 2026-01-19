@@ -146,155 +146,107 @@ $$
 
 4. 分支结构，时间复杂度取最大值。
 
-   ```mermaid
-   flowchart
-       a([开始])-->b{if 条件}--True-->c(O_n)-->e([结束])
-       b--False-->f(O_n^2)-->e
+   <img src="../images/parctice/Xnip2026-01-19_18-07-21.jpg" style="zoom:35%;" />
+
+   * 上面的分支语句时间复杂度为$O(n^2)$。
+
+5. 判断算法的效率时，只需要关注操作数量的最高次项，其它次要项和常数项可以忽略。
+
+   ```python
+   for j in range(2):
+     for i in range(n):
+       print(i)
    ```
 
-   * 
+   * 上面的代码的计算次数为$2n$，只需要关注$n$的最高次项，所以时间复杂度为$O(n)$。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/v2-e879535dab892ff845.jpg" style="zoom: 65%;" />
+   $$
+   \begin{array}{l}
+   \text{第一步}: O(n) \\
+   \text{第二步}: O(1) \\
+   \text{第三步}: O(n^2) \\
+   \text{第四步}: O(n^3) \\
+   \text{总复杂度}: T = O(n) + O(1) + O(n^2) + O(n^3)\Rightarrow O(n^3)
+   \end{array}
+   $$
 
-在算法理论中，$O(f(n))$ 算法复杂度，表示算法执行的上界。在实践中，$O(f(n))$ 表示算法执行的下界。
+   * 总复杂度只需要关注最高次项，所以为$O(n^3)$。
 
-### 理解数据规模的概念
+### 不同的时间复杂度
 
-计算 $O(n)$ 算法在不同规模下所需的时间
+> [!think]
+>
+> 如下两个列表，遍历找的10的位置，时间复杂度是多少？
+>
+> ```python
+> list_one = [1, 5, 6, 4, 3, 2, 7, 8, 9, 10]
+> list_two = [10, 5, 6, 4, 3, 2, 7, 8, 9, 1]
+> ```
 
-```cpp
-#include <iostream>
-#include <cmath>
-#include <vector>
+分析算法时，可能存在的几种时间复杂度：
 
-using namespace std;
+* 算法完成工作**最少**需要多少基本操作，即最优时间复杂度。只反映最乐观最理想的情况，没有参考价值。
+* 算法完成工作**最多**需要多少基本操作，即最坏时间复杂度。提供了一种保证，表明算法在此种程度的基本操作中一定能完成工作。
+* 算法完成工作**平均**需要多少基本操作，即平均时间复杂度。对于平均时间复杂度，是对算法的一个全面评价，常用于实际项目。
 
-int main() {
-    for (int x = 0; x <= 9; x++) {
-        int n = pow(10, x);
-
-        clock_t start = clock();
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += i;
-        }
-        clock_t end = clock();
-
-        cout << "10 ^ " << x << " = " << n << " Time: " << (double)(end - start) / CLOCKS_PER_SEC << "s" << endl;
-    }
-}
-```
-
-如果想在1秒内解决问题，当算法复杂度为 $O(n^2)$ 使用C++语言，处理数据规模大约在$10^4$ 左右（根据个人计算机性能）。
+>[!note]
+>
+>通常算法研究主要关注，最坏时间复杂度。
 
 ### 常见代码模式的复杂度
 
-1. 交换两个数据，时间复杂度为 $O(1)$​。
+| 阶数        | 名称   |
+| ----------- | ------ |
+| $O(1)$      | 常数阶 |
+| $O(\log n)$ | 对数阶 |
+| $O(n)$      | 线性阶 |
+| $O(n^2)$    | 对数阶 |
+| $O(n^3)$    | 立方阶 |
 
-```cpp
-void swap(int &a, int &b) {
-    int temp = a;
-    a = b;
-    b = temp;
-}
-```
-
-2. 计算n个整数的和，时间复杂度为 $O(n)$。
-
-```cpp
-int sum(int n) {
-    int sum = 0;
-    for (int i = 0; i < n; i++) {
-        sum += i;
-    }
-    return sum;
-}
-```
-
-3. 将字符串进行反转，时间复杂度为 $O(n)$​。
-
-```cpp
-# include <string>
-using namespace std;
-
-void reverse(string &s) {
-    int n = s.size();
-    for (int i = 0; i < n / 2; i++) {
-        swap(s[i], s[n - i - 1]);
-    }
-}
-```
-
-4. 选择排序算法，时间复杂度为 $O(n^2)$。
-
-```cpp
-void selectionSort(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
-        int minIndex = i;
-        for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
-                minIndex = j;
-            }
-        }
-        swap(arr[i], arr[minIndex]);
-    }
-}
-```
-
-选择排序算法时间复杂度计算
+时间消耗从小到大为
 $$
-(n-1)+(n-2)+(n-3)+…+0=\frac{(0+n-1)\times n}{2}
-=\frac{1}{2}n^2-\frac{1}{2}n=O(n^2)
+O(1)<O(\log n)<O(n)<O(n^2)<O(n^3)
 $$
-其中 $n$ 复杂度远小于 $n^2$​。
+常见复杂度曲线
 
-有双重循环的算法一般复杂度是 $O(n^2)$​。
+<img src="../images/parctice/time-complexity.png" style="zoom:65%;" />
 
-```cpp
-void printInformatio(int n) {
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; i < 30; i++) {
-            cout << "Class" << i << " - " << "No. " << j << endl;
-        }
-    }
-}
+### 理解数据规模的概念
+
+1. 计算 $O(n)$ 算法在不同规模下所需的时间
+
+```python
+import time
+
+for i in range(9):
+    n = pow(10, i)
+    start = time.time()
+    sum = 0
+    for j in range(n):
+        sum += j
+    end = time.time()
+
+    print(f'{n}: {end - start}')
 ```
 
-算法执行的基本操作是 $30\times n$，时间复杂度为 $O(n)$​。
+* 如果想在1秒内解决问题，当算法复杂度为 $O(n)$ 使用python语言，处理数据规模大约在$10^8$ 左右。
 
-5. 二分查找法，时间复杂度为 $O(\log n)$。
+2. 计算 $O(n^2)$ 算法在不同规模下所需的时间
 
-```cpp
-int binarySearch(int arr[], int n, int x) {
-    int left = 0;
-    int right = n - 1;
-    while (left <= right) {
-        int mid = left + (right - left) / 2;
-        if (arr[mid] == x) {
-            return mid;
-        }
-        if (arr[mid] < x) {
-            left = mid + 1;
-        } else {
-            right = mid - 1;
-        }
-    }
-    return -1;
-}
+```python
+for i in range(5):
+    n = pow(10, i)
+    start = time.time()
+    sum = 0
+    for j in range(n):
+        for k in range(n):
+            sum += k
+    end = time.time()
+
+    print(f'{n}: {end - start}')
 ```
 
-二分查找法的搜索次数
-
-```mermaid
-flowchart LR
-		z(在n个元素中查找)-->a(在n/2个元素中查找)-->b(在n/4个元素中查找)-->d(…)-->e(在1个元素中查找)
-```
-
-这个过程等价于 $n$ 经过多少次除以2后，等于1，即 $\log_2n=O(\log n)$
-
-> [!warning]
->
-> 不同底的对数之间只差一个常数，所以对数复杂度可以统一表示为 $O(\log n)$。
+* 如果想在1秒内解决问题，当算法复杂度为 $O(n^2)$ 使用python语言，处理数据规模大约在$10^3$ 左右。
 
 ## 空间复杂度
 
