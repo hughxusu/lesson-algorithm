@@ -40,8 +40,8 @@ $$
 > flowchart LR
 > a(
 >  	name: Bob
->   age: 25
->   job: Dev
+>   	age: 25
+>   	job: Dev
 > )
 > ```
 
