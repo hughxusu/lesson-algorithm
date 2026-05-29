@@ -8,7 +8,7 @@
 
 **[455. 分发饼干](https://leetcode.cn/problems/assign-cookies/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/c3ae1d0ae6c1a0389fdbf2efc0b7abff.png" style="zoom:60%;" />
+<img src="./assets/c3ae1d0ae6c1a0389fdbf2efc0b7abff.png" style="zoom:60%;" />
 
 * 将最大的饼干给胃口最好的小朋友
   * 如果最大的饼干无满足，则该小朋友被放弃。
@@ -79,7 +79,7 @@ class Solution:
   * 每次选择结尾最早区间即留给后来者足够大的选择空间
 
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-03-21_21-32-20.jpg" style="zoom:55%;" />
+<img src="./assets/Xnip2026-03-21_21-32-20.jpg" style="zoom:55%;" />
 
 ```python
 class Solution:

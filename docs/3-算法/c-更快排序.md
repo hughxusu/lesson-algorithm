@@ -14,7 +14,7 @@
 2. 将所有小于基准数的元素移到其左侧，而大于基准数的元素移到其右侧。
 3. 递归循环处理左右子数组。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/20121027Rj3YsKAi1Q.jpg" style="zoom:75%;" />
+<img src="./assets/20121027Rj3YsKAi1Q.jpg" style="zoom:75%;" />
 
 ```python
 def quick_sort(arr):
@@ -69,7 +69,7 @@ def quick_sort_universal_stack(arr):
 
 最坏时间复杂度，划分极不平衡，每次`pivot`都取得最小值。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-02-25_16-13-29.jpg" style="zoom:40%;" />
+<img src="./assets/Xnip2026-02-25_16-13-29.jpg" style="zoom:40%;" />
 
 * 需要遍历$n$趟。
 * 每趟比较的次数从`n-1`到`0`
@@ -77,7 +77,7 @@ def quick_sort_universal_stack(arr):
 
 最好时间复杂度，每次`pivot`可以将数组分成相等的两部分。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-02-25_16-36-22.jpg" style="zoom:40%;" />
+<img src="./assets/Xnip2026-02-25_16-36-22.jpg" style="zoom:40%;" />
 
 * 遍历的趟数，假设初始序列长度为 $n$，每一趟后规模减半：
   * 第1趟，$\frac{n}{2^1}$。
@@ -106,7 +106,7 @@ def quick_sort_universal_stack(arr):
 1. 划分阶段：通过递归不断地将数组从中点处分开，将长数组的排序问题转换为短数组的排序问题。
 2. 合并阶段：当子数组长度为 1 时终止划分，开始合并，持续地将左右两个较短的有序数组合并为一个较长的有序数组，直至结束。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/merge_sort_overview.png" style="zoom:60%;" />
+<img src="./assets/merge_sort_overview.png" style="zoom:60%;" />
 
 > [!note]
 >
@@ -161,7 +161,7 @@ def merge_sort(arr):
 3. 将堆顶元素向下调整，重新构造大顶堆。
 4. 循环执行第`2.`步和第`3.`步。循环$n-1$轮后，即可完成数组排序。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-03-09_19-44-44.jpg" style="zoom:35%;" />
+<img src="./assets/Xnip2026-03-09_19-44-44.jpg" style="zoom:35%;" />
 
 数组中堆的向下调整
 

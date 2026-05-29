@@ -22,7 +22,7 @@
 
 选择1作为首位，剩下只能选择2和3。其他情况类似。
 
-![](https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/leetcode-46-1.png)
+![](./assets/leetcode-46-1.png)
 $$
 P(S)=\left \{s_i  \right \}+P(S-s_i)\quad s_i\in S
 $$
@@ -51,7 +51,7 @@ class Solution:
 
   比较递归与回溯
 
-  <img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-03-15_22-08-52.jpg" style="zoom:65%;" />
+  <img src="./assets/Xnip2026-03-15_22-08-52.jpg" style="zoom:65%;" />
 
   深度优先遍历：
 
@@ -72,7 +72,7 @@ class Solution:
 
 **[79. 单词搜索](https://leetcode.cn/problems/word-search/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/leetcode-79.jpg" style="zoom: 25%;" />
+<img src="./assets/leetcode-79.jpg" style="zoom: 25%;" />
 
 1. 定义搜索的匹配顺序为上、右、下、左，顺时针方向。
 2. 首先搜索上面位置，
@@ -134,7 +134,7 @@ class Solution:
 
 **[77. 组合](https://leetcode.cn/problems/combinations/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/1821153-20200908103721290-570793460.png" style="zoom: 50%;" />
+<img src="./assets/1821153-20200908103721290-570793460.png" style="zoom: 50%;" />
 
 ```python
 class Solution:
@@ -170,7 +170,7 @@ Floodfill算法
 * 使用深度优先遍历。
 * 重复上面的过程，直到所有的陆地全都标记过。
 
-  <img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/format-webp.png" style="zoom:65%;" />
+  <img src="./assets/format-webp.png" style="zoom:65%;" />
 
 > [!warning]
 >
@@ -216,12 +216,12 @@ class Solution:
 
 **[51. N 皇后](https://leetcode.cn/problems/n-queens/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/n_queens_constraints.png" style="zoom:65%;" />
+<img src="./assets/n_queens_constraints.png" style="zoom:65%;" />
 
 1. 棋盘每行都允许且只允许放置一个皇后。
 2. 从第一行开始，在每行放置一个皇后，直至最后一行结束。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/n_queens_placing.png" style="zoom:65%;" />
+<img src="./assets/n_queens_placing.png" style="zoom:65%;" />
 
 对角线判断：
 

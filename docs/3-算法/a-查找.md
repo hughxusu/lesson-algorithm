@@ -38,7 +38,7 @@ def linear_search_2(arr, target):
 2. 通过反复将搜索区间划分为两半，并确定目标值可能在哪一半中，从而将搜索范围缩小一半。
 3. 这个过程不断重复，直到找到目标值或确定目标值不在数组中。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/c2dc32cfb6868b22d09e7c46e4bc560d.png" style="zoom: 40%;" />
+<img src="./assets/c2dc32cfb6868b22d09e7c46e4bc560d.png" style="zoom: 40%;" />
 
 > [!warning]
 >
@@ -72,7 +72,7 @@ def binary_search_recursive(arr, target):
 
 ### 循环实现
 
-<img src="./assets/binary-search-find.png" style="zoom:80%;" />
+<img src="./assets/binary-search-find-20260529121139851.png" style="zoom:80%;" />
 
 * 定义两个游标用于表示查找的范围。
 * 在区间`[low, hight]`之间寻找目标值，**注意：这里包含边界值，即为闭区间。**
@@ -241,7 +241,7 @@ $$
 
 对撞指针算法
 
-<img src="./assets/02d1401a85d95f9eb874346f86e54182.png" style="zoom: 45%;" />
+<img src="./assets/02d1401a85d95f9eb874346f86e54182-20260529121145871.png" style="zoom: 45%;" />
 
 ```python
 class Solution:
@@ -287,7 +287,7 @@ class Solution:
 
 **[1. 两数之和](https://leetcode.cn/problems/two-sum/)**
 
-<img src="./assets/1*hQFPJ9UBNxlOCzSaFKxqp.jpg" style="zoom: 55%;" />
+<img src="./assets/1*hQFPJ9UBNxlOCzSaFKxqp-20260529121150058.jpg" style="zoom: 55%;" />
 
 ```python
 class Solution:
@@ -336,7 +336,7 @@ class Solution:
 >
 > 在使用查找表时，如何定义索引，是解决问题的关键。
 
-<img src="./assets/05155932_647d95e475cfb95115.png" style="zoom:75%;" />
+<img src="./assets/05155932_647d95e475cfb95115-20260529121205484.png" style="zoom:75%;" />
 
 * 定点不同被视为不同组合
   * 当$A$作为顶点时，找到了$(A, B, C)$。
@@ -367,7 +367,7 @@ class Solution:
 
 **[219. 存在重复元素 II](https://leetcode.cn/problems/contains-duplicate-ii/)**
 
-<img src="./assets/tyrty.jpg" style="zoom:50%;" />
+<img src="./assets/tyrty-20260529121209571.jpg" style="zoom:50%;" />
 
 ```python
 class Solution:

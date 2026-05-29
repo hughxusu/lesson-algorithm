@@ -4,7 +4,7 @@
 
 对于斐波那契数列求解问题
 
-<img src="https://hughxusu.github.io/lesson-py/assets/v2-74704e7bf8edf09f5d318596f9cb0889_1440w.C8KI77Qt.webp" style="zoom:80%;" />
+<img src="./assets/v2-74704e7bf8edf09f5d318596f9cb0889_1440w.C8KI77Qt.webp" style="zoom:80%;" />
 
 ```python
 def fib(n):
@@ -20,7 +20,7 @@ def fib(n):
 >
 > 为什么斐波那契数列求解过程这么慢？
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/6a8b8955dfb30b1a7625814fa75e5743.png" style="zoom:45%;" />
+<img src="./assets/6a8b8955dfb30b1a7625814fa75e5743.png" style="zoom:45%;" />
 
 统计`fib(20)`的调用次数
 
@@ -93,7 +93,7 @@ def fib_dynamic(n):
 print(f'fib_dynamic(20) = {fib_dynamic(20)}')
 ```
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/20201115153305916.png" style="zoom:75%;" />
+<img src="./assets/20201115153305916.png" style="zoom:75%;" />
 
 |      | 递归                              | 动态规划                            |
 | :--- | :-------------------------------- | :---------------------------------- |
@@ -118,7 +118,7 @@ Dynamic Programming（动态规划）中Programming是指一种表格规划方�
 
 * 因为拆分的个数`k`未知，如果使用穷举法，应该采用回溯法。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/l343.jpg" style="zoom: 50%;" />
+<img src="./assets/l343.jpg" style="zoom: 50%;" />
 
 > [!note]
 >
@@ -194,7 +194,7 @@ class Solution:
 
 **[198. 打家劫舍](https://leetcode.cn/problems/house-robber/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-03-20_10-01-10.jpg" style="zoom:75%;" />
+<img src="./assets/Xnip2026-03-20_10-01-10.jpg" style="zoom:75%;" />
 
 1. 递归解法
 
@@ -289,7 +289,7 @@ class Solution:
 >
 > 给定$n$个物品，第$i$个物品的重量为$wgt[i-1]$ 、价值为$val[i-1]$，和一个容量为$cap$的背包。每个物品只能选择一次，问在限定背包容量下能放入物品的最大价值。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/knapsack_example.png" style="zoom:65%;" />
+<img src="./assets/knapsack_example.png" style="zoom:65%;" />
 
 穷举法
 
@@ -321,7 +321,7 @@ $$
 * $F(i-1, c)$第$i$个物品不放入背包中。
 * $v(i)+F(i-1, c-w(i))$第$i$个物品放入背包中，$v(i)$表示第$i$个物品的价值，$w(i)$表示第$i$个物品的总量。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/knapsack_dfs.png" style="zoom:65%;" />
+<img src="./assets/knapsack_dfs.png" style="zoom:65%;" />
 
 1. 记忆化搜索
 
@@ -386,7 +386,7 @@ def knapsack_dp(wgt: list[int], val: list[int], cap: int) -> int:
   * `dp[i][c]`表示前`i`个物品，且背包容量为`c` `时，能拿到的最大价值。
 * 上面算法的时间复杂度和空间复杂度都为$O(n\times c)$。
 
-![](https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-03-22_20-12-47.jpg)
+![](./assets/Xnip2026-03-22_20-12-47.jpg)
 
 3. 优化空间复杂度
    * 由于每个状态都只与其上一行的状态有关，因此可以使用两个数组滚动前进，将空间复杂度从$O(n^2)$降至$O(n)$。
@@ -466,7 +466,7 @@ class Solution:
 ```
 
 2. 使用动态规划的方法
-3. <img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/leecode-416.jpg" style="zoom:75%;" />
+3. <img src="./assets/leecode-416.jpg" style="zoom:75%;" />
 
 ```python
 class Solution:
@@ -508,7 +508,7 @@ $$
 
 * 其中`num[j]`包含在`[0…i]`的范围内，`j`在`i`的前面。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-03-21_18-58-53.jpg" style="zoom:45%;" />
+<img src="./assets/Xnip2026-03-21_18-58-53.jpg" style="zoom:45%;" />
 
 1. dp数组的长度记录了最长上升子序列的长度
 2. 初始时`dp`表的值为1，当数组为降序排序时，最长上升子序列即为1。
