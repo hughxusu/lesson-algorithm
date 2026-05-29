@@ -64,7 +64,7 @@ export default withMermaid({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/hughxusu/lesson-algorithm' }
     ]
 
     // https://vitepress.dev/reference/default-theme-config
