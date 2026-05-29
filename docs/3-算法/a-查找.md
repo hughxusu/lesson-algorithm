@@ -72,7 +72,7 @@ def binary_search_recursive(arr, target):
 
 ### 循环实现
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/binary-search-find.png" style="zoom:80%;" />
+<img src="./assets/binary-search-find.png" style="zoom:80%;" />
 
 * 定义两个游标用于表示查找的范围。
 * 在区间`[low, hight]`之间寻找目标值，**注意：这里包含边界值，即为闭区间。**
@@ -241,7 +241,7 @@ $$
 
 对撞指针算法
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/02d1401a85d95f9eb874346f86e54182.png" style="zoom: 45%;" />
+<img src="./assets/02d1401a85d95f9eb874346f86e54182.png" style="zoom: 45%;" />
 
 ```python
 class Solution:
@@ -287,7 +287,7 @@ class Solution:
 
 **[1. 两数之和](https://leetcode.cn/problems/two-sum/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/1*hQFPJ9UBNxlOCzSaFKxqp.jpg" style="zoom: 55%;" />
+<img src="./assets/1*hQFPJ9UBNxlOCzSaFKxqp.jpg" style="zoom: 55%;" />
 
 ```python
 class Solution:
@@ -336,7 +336,7 @@ class Solution:
 >
 > 在使用查找表时，如何定义索引，是解决问题的关键。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/05155932_647d95e475cfb95115.png" style="zoom:75%;" />
+<img src="./assets/05155932_647d95e475cfb95115.png" style="zoom:75%;" />
 
 * 定点不同被视为不同组合
   * 当$A$作为顶点时，找到了$(A, B, C)$。
@@ -367,7 +367,7 @@ class Solution:
 
 **[219. 存在重复元素 II](https://leetcode.cn/problems/contains-duplicate-ii/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/tyrty.jpg" style="zoom:50%;" />
+<img src="./assets/tyrty.jpg" style="zoom:50%;" />
 
 ```python
 class Solution:
