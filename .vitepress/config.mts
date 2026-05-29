@@ -51,6 +51,7 @@ export default withMermaid({
           { text: '回溯与递归', link: '/docs/3-算法/d-递归与回溯.md' },
           { text: '动态规划', link: '/docs/3-算法/e-动态规划.md' },
           { text: '贪心算法', link: '/docs/3-算法/f-贪心算法.md' },
+          { text: '最小生成树', link: '/docs/3-算法/g-最小生成树.md' },
         ]
       }
     ],
