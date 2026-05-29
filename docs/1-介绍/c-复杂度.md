@@ -21,7 +21,7 @@ for a in range(1001):
 >
 > 算法程序的执行时间是否可以反应出算法的效率，即算法的优劣？
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/67w0yonren.jpeg" style="zoom:50%;" />
+<img src="./assets/67w0yonren.jpeg" style="zoom:50%;" />
 
 只考虑运算时间，不考虑计算机的性能，无法评价算法的性能。
 
@@ -167,7 +167,7 @@ $$
 
 4. 分支结构，时间复杂度取最大值。
 
-   <img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-01-19_18-07-21.jpg" style="zoom:35%;" />
+   <img src="./assets/Xnip2026-01-19_18-07-21.jpg" style="zoom:35%;" />
 
    * 上面的分支语句时间复杂度为$O(n^2)$。
 
@@ -256,7 +256,7 @@ O(1)<O(\log n)<O(n)<O(n^2)<O(n^3)
 $$
 常见复杂度曲线
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/time-complexity.png" style="zoom:65%;" />
+<img src="./assets/time-complexity.png" style="zoom:65%;" />
 
 > [!think]
 >

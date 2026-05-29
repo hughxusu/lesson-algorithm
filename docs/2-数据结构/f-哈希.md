@@ -35,7 +35,7 @@ class Pair:
 
 哈希函数在哈希表中起到常关键的作用。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/01e1f19b007b5c890fb0464bdee63fcf.png" style="zoom:55%;" />
+<img src="./assets/01e1f19b007b5c890fb0464bdee63fcf.png" style="zoom:55%;" />
 
 哈希函数的选择**不是唯一的**，设计一个“好”的哈希函数是一门极具艺术性的技术。哈希函数设计的基本要求：
 
@@ -45,7 +45,7 @@ class Pair:
 
 设数组长度为100，哈希函数为`key % 100`。以学号为`key`，以学生姓名为`value`构成的哈希表为
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/hash_function.png" style="zoom:55%;" />
+<img src="./assets/hash_function.png" style="zoom:55%;" />
 
 在真实的情况下，要想找到一个不同的`key`对应的散列值都不一样的散列函数，几乎是不可能的。多个输入对应相同输出的情况就是哈希冲突：
 
@@ -65,7 +65,7 @@ class Pair:
 20336 % 100 = 36
 ```
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/hash_collision.png" style="zoom:55%;" />
+<img src="./assets/hash_collision.png" style="zoom:55%;" />
 
 哈希表扩容：
 
@@ -111,7 +111,7 @@ class HashMapChaining:
 
 每个桶会对应一条链表，所有散列值相同的元素都放到相同位置对应的链表中。链表法是解决哈希冲突的常用方法。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/hash_table_chaining.png" style="zoom:55%;" />
+<img src="./assets/hash_table_chaining.png" style="zoom:55%;" />
 
 哈希函数计算桶的位置，插入和查找的时间复杂度为$O(1)$。链表插入和查找的时间复杂的度与链表的长度$k$成正比，时间复杂度为$O(k)$​。对于比较均匀的散列函数来说，理论上
 $$
@@ -233,7 +233,7 @@ class HashMapChaining:
 * 插入元素：通过哈希函数计算桶索引，若发现桶内已有元素，则从冲突位置向后线性遍历（步长通常为 ），直至找到空桶，将元素插入其中。
 * 查找元素：若发现哈希冲突，则使用相同步长向后进行线性遍历，直到找到对应元素，返回`value`即可；如果遇到空桶，说明目标元素不在哈希表中，返回`None`。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/bd03d35317fc8614828daa2d4d0c8004.png" style="zoom:55%;" />
+<img src="./assets/bd03d35317fc8614828daa2d4d0c8004.png" style="zoom:55%;" />
 
 * 删除操作：在开放寻址哈希表中不能直接将元素置空。直接设置空元素，会在数组内产生一个空桶`None` 。当查询元素时，线性探测到该空桶就会返回，因此在该空桶之下的元素都无法被访问，从而产生查询遗漏。
   * 采用惰性删除，来替代直接清除。不直接从哈希表中移除元素，而是利用一个常量 `TOMBSTONE` 来标记这个桶。
@@ -405,7 +405,7 @@ class Solution:
 
 python中的集合运算
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-03-05_12-02-48.jpg" style="zoom:45%;" />
+<img src="./assets/Xnip2026-03-05_12-02-48.jpg" style="zoom:45%;" />
 
 ```python
 a = set([1, 2])

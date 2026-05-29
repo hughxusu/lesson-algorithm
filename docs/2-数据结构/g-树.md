@@ -2,7 +2,7 @@
 
 数据结构树，是一种非线性结构，与自然界的树类似，从树根生长，逐级分支。实际上树数据结构，更像一棵倒过来的树。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/610439-20160129122953958-738559067.png" style="zoom:85%;" />
+<img src="./assets/610439-20160129122953958-738559067.png" style="zoom:85%;" />
 
 树的相关概念
 
@@ -146,7 +146,7 @@ $$
 1. 从第$n-1$阶跨了1步上来，到达$n-1$用$x$种方法。
 2. 从第$n-2$阶跨了2步上来，到达$n-2$用$y$种方法。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/1*EPHa4dWAZKxvLru9E2xWwA.png" style="zoom:50%;" />
+<img src="./assets/1*EPHa4dWAZKxvLru9E2xWwA.png" style="zoom:50%;" />
 
 因此，到达第$n$阶的总方法数，就等于$x+y$，表达式为：
 $$
@@ -179,7 +179,7 @@ class Solution:
 
 **[17. 电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/a339c2e1932a412487cdc991abfa2b1a.png" style="zoom:65%;" />
+<img src="./assets/a339c2e1932a412487cdc991abfa2b1a.png" style="zoom:65%;" />
 
 上面的组合形成了一个树结构问题，树结构问题可以使用递归的方法解决。
 

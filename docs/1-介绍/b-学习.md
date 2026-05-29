@@ -45,7 +45,7 @@
 
 leetcode的使用
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/Xnip2024-07-05_17-42-57.jpg" style="zoom: 30%;" />
+<img src="./assets/Xnip2024-07-05_17-42-57.jpg" style="zoom: 30%;" />
 
 ## 解决算法问题的一般思路
 

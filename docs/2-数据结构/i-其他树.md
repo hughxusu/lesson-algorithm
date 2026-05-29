@@ -7,7 +7,7 @@
 1. 左子树中所有节点的值<根节点的值<右子树中所有节点的值。
 2. 任意节点的左、右子树也是二叉搜索树，即同样满足条件 `1.`。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-02-26_23-33-57.jpg" style="zoom:55%;" />
+<img src="./assets/Xnip2026-02-26_23-33-57.jpg" style="zoom:55%;" />
 
 > [!warning]
 >
@@ -30,7 +30,7 @@ class BinarySearchTree:
    * 如果`target`==当前节点值，不允许再插入当前值。
 2. 执行插入：重复上述查找过程，直到遇到空指针`NULL`，即找到了新节点的正确位置。将新节点插入到该空指针位置即可。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/bst_insert.png" style="zoom:65%;" />
+<img src="./assets/bst_insert.png" style="zoom:65%;" />
 
 ```python
 class BinarySearchTree:
@@ -65,18 +65,18 @@ class BinarySearchTree:
 
 1. 删除叶子节点：直接将该节点的父节点指向它的指针置为`NULL`。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/bst_remove_case1.png" style="zoom:65%;" />
+<img src="./assets/bst_remove_case1.png" style="zoom:65%;" />
 
 2. 删除只有一个子节点的节点：将子节点的值复制到父节点，然后删除子节点。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/bst_remove_case2.png" style="zoom:65%;" />
+<img src="./assets/bst_remove_case2.png" style="zoom:65%;" />
 
 3. 删除有两个子节点的节点
    1. 找到目标节点的右子树中的最小节点（称为后继节点）。
    2. 将后继节点的值复制到目标节点中。
    3. 删除那个后继节点（此时后继节点情况适用于1或2）。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-03-02_15-48-16.jpg" style="zoom:37%;" />
+<img src="./assets/Xnip2026-03-02_15-48-16.jpg" style="zoom:37%;" />
 
 ```python
 class BinarySearchTree:
@@ -125,7 +125,7 @@ class BinarySearchTree:
 
 二叉树的中序遍历遵循“左$\rightarrow$根$\rightarrow$右”的遍历顺序，而二叉搜索树满足“左子节点<根节点<右子节点”的大小关系。所以中序遍历就是顺序打印。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/bst_inorder_traversal.png" style="zoom:65%;" />
+<img src="./assets/bst_inorder_traversal.png" style="zoom:65%;" />
 
 ```python
 class BinarySearchTree:
@@ -148,7 +148,7 @@ class BinarySearchTree:
 * 递归表达式：将当前节点拼接到左右子树所有的路径上。
 * 终止条件：到叶子节点终止。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/traversal_complete.png" style="zoom:90%;" />
+<img src="./assets/traversal_complete.png" style="zoom:90%;" />
 
 ```python
 class Solution:
@@ -169,7 +169,7 @@ class Solution:
 1. 包含当前节点，路径上的点和值为`sum`。
 2. 不包含当前节点，路径上的点和值为`sum`。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/feb80061d0aeeeb609691db56d5e6baf.png" style="zoom:80%;" />
+<img src="./assets/feb80061d0aeeeb609691db56d5e6baf.png" style="zoom:80%;" />
 
 ```python
 class Solution:
@@ -198,7 +198,7 @@ class Solution:
 
 **[235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/search-tree.jpg" style="zoom: 45%;" />
+<img src="./assets/search-tree.jpg" style="zoom: 45%;" />
 
 1. 对于任意节点`root`，`p`和`q`都小于或大于公共祖先，则在左子树或右子树搜索（情况三、情况四）。
 2. 对于任意节点`root`，`p`和`q`一个小于`root`一个大于`root`，最近公共祖先是`root`（情况二）。

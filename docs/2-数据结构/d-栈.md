@@ -15,11 +15,11 @@
 
 栈（Stack）它是一种运算受限的线性表。其限制是仅允许在表的一端进行插入和删除运算，这一端被称为栈顶，相对地，把另一端称为栈底。栈的结构特点，让它在处理数据的时候，符合后进先出的特点。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/44445afcfc1ab96acb55b0f0ce49ca37.png" style="zoom:65%;" />
+<img src="./assets/44445afcfc1ab96acb55b0f0ce49ca37.png" style="zoom:65%;" />
 
 栈在计算机中最经典的应用就是函数调用堆栈 (Call Stack)，任何编程语言在运行函数时都依赖它。
 
-![](https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/stack-function.jpg)
+![](./assets/stack-function.jpg)
 
 1. 执行1时，把1的信息压入栈。
 2. 函数1调用函数2时，把2压入栈。
@@ -55,7 +55,7 @@ class Stack:
 >
 > 如果使用单链表来实现栈？
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/3a54k4eh5jfwq_99fc576b100948369aae6264b9287d39.jpeg" style="zoom:45%;" />
+<img src="./assets/3a54k4eh5jfwq_99fc576b100948369aae6264b9287d39.jpeg" style="zoom:45%;" />
 
 * 因为单链表头插的效率为$O(1)$，明显比尾差$O(N)$更高，所以用单链表实现栈时，应该以链表的头为栈顶。
 
@@ -63,11 +63,11 @@ class Stack:
 
 队列（Queue）是一种操作受限制的线性表，它只允许在表的头部进行删除操作，而在表的尾部进行插入操作。队列的结构特点让它在处理数据的时候符合了先进先出的特点。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/queue_operations.png" style="zoom:65%;" />
+<img src="./assets/queue_operations.png" style="zoom:65%;" />
 
 操作系统中的任务调度是一个典型的队列，电脑CPU同时要处理听歌、打字、下载等多个任务，但CPU的核心数有限。CPU按照“先来后到”的顺序给每个任务分配执行时间。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/225fab257000631986b70755b08c1724.png" style="zoom:65%;" />
+<img src="./assets/225fab257000631986b70755b08c1724.png" style="zoom:65%;" />
 
 ### 队列的实现
 
@@ -105,7 +105,7 @@ class Queue:
 
 双端队列（deque），是一种具有队列和栈的性质的数据结构，双端队列入队和出队可以在队列的两端进行。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/deque_operations.png" style="zoom:65%;" />
+<img src="./assets/deque_operations.png" style="zoom:65%;" />
 
 双端队列中，如何使得`push_first`、`push_last`、`pop_first`和`pop_first`的时间复杂度均为$O(1)$。需要使用双向链表来实现。
 
@@ -187,7 +187,7 @@ print(deq.popleft())
 
 **[20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/17000820_648c88f4b485e64559.webp" style="zoom: 50%;" />
+<img src="./assets/17000820_648c88f4b485e64559.webp" style="zoom: 50%;" />
 
 * 栈顶元素反映在嵌套的层次关系中，最近的需要匹配的元素。
 
@@ -224,7 +224,7 @@ class Solution:
 
 **[504. 七进制数](https://leetcode.cn/problems/base-7/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/进制转换算法.jpg" style="zoom:90%;" />
+<img src="./assets/进制转换算法.jpg" style="zoom:90%;" />
 
 ```python
 class Solution:

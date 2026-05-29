@@ -1,11 +1,14 @@
-import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid({
   title: "数据结构与算法",
   description: "数据结构与算法",
   ignoreDeadLinks: true,
   base: '/lesson-algorithm/',
+  markdown: {
+    math: true,
+  },
   head: [
     ['link', { rel: 'icon', href: '/lesson-algorithm/logo_icon.jpeg' }],
   ],

@@ -9,14 +9,14 @@
 
 1. 链表的节点。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/10-单链表的结点.jpg" style="zoom:30%;" />
+<img src="./assets/10-单链表的结点.jpg" style="zoom:30%;" />
 
 * 数据域用来存放具体的数据。
 * 链接域用来存放下一个节点的位置。
 
 2. 链表的结构
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/08-单链表.jpg" style="zoom:30%;" />
+<img src="./assets/08-单链表.jpg" style="zoom:30%;" />
 
 * 链表头指向首节点，从表头出发能找到表中的任意节点。
 * 链表的尾节点的链接域为空。
@@ -52,7 +52,7 @@ class SingleLinkList:
 
 链表的初始化
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/11-链表的初始化.jpg" style="zoom:30%;" />
+<img src="./assets/11-链表的初始化.jpg" style="zoom:30%;" />
 
 ```python
 node = SingleNode(100)
@@ -64,7 +64,7 @@ link.head = node
 
 在链表查找或遍历等操作时，需要定义一个临时变量用于记录当前节点，这个变量称为游标。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/08-单链表-遍历.jpg" style="zoom:30%;" />
+<img src="./assets/08-单链表-遍历.jpg" style="zoom:30%;" />
 
 > [!warning]
 >
@@ -104,7 +104,7 @@ class SingleLinkList:
    2. 新节点的`next`指向首节点。
    3. 首节点变量指向新节点。
 
-   <img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/link-unshift.png" style="zoom:60%;" />
+   <img src="./assets/link-unshift.png" style="zoom:60%;" />
 
 > [!alert]
 >
@@ -129,7 +129,7 @@ class SingleLinkList:
 >
 > 使用游标的`next`判断节点是否到达尾部，否则无法记录获取当前节点位置。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/link-append.jpg" style="zoom:60%;" />
+<img src="./assets/link-append.jpg" style="zoom:60%;" />
 
 ```python
 class SingleLinkList:
@@ -153,7 +153,7 @@ class SingleLinkList:
    3. 新节点指针指向第$i$个节点。
    4. 第$i-1$个节点指向新节点。
 
-   <img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/link-insert.jpg" style="zoom: 25%;" />
+   <img src="./assets/link-insert.jpg" style="zoom: 25%;" />
 
 ```python
 class SingleLinkList:
@@ -187,7 +187,7 @@ class SingleLinkList:
    1. 删除第$i$个位置元素，需要遍历到第$i-1$个位置。
    2. 将$i-1$的`next`，指向$i+1$元素。
 
-   <img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/link-del.jpg" style="zoom:25%;" />
+   <img src="./assets/link-del.jpg" style="zoom:25%;" />
 
 ```python
 class SingleLinkList:
@@ -209,7 +209,7 @@ class SingleLinkList:
    1. 使用`cur`查找要删除的数据，使用`prev`指向前一个数据。
    2. 查找到要删除的数据后，将`prev`的`next`指向`cur`的`next`。
 
-   <img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/8kiha93pyk.jpeg" style="zoom:70%;" />
+   <img src="./assets/8kiha93pyk.jpeg" style="zoom:70%;" />
 
 ```python
 class SingleLinkList:
@@ -234,7 +234,7 @@ class SingleLinkList:
 
 使用`cur`查找当前数据。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/7ce56b14-9053-4ee9-88df-b860c2277b79.png" style="zoom:65%;" />
+<img src="./assets/7ce56b14-9053-4ee9-88df-b860c2277b79.png" style="zoom:65%;" />
 
 ```python
 class SingleLinkList:
@@ -259,7 +259,7 @@ class SingleLinkList:
 
 **[leetcode 206 反转链表](https://leetcode.cn/problems/reverse-linked-list/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/change-point.jpg" style="zoom: 45%;" />
+<img src="./assets/change-point.jpg" style="zoom: 45%;" />
 
 ```python
 class Solution:
@@ -293,7 +293,7 @@ class Solution:
 1. 和`remove_value`一样是删除相同的值。
 2. 一次性删除多个值，`remove_value`一次只能删除一个值。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/213184a710d86a6d57f953d4b2af8123.png" style="zoom:90%;" />
+<img src="./assets/213184a710d86a6d57f953d4b2af8123.png" style="zoom:90%;" />
 
 ```python
 class Solution:
@@ -316,7 +316,7 @@ class Solution:
 
 **[leetcode 24 两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/leetcode-24.jpg" style="zoom:50%;" />
+<img src="./assets/leetcode-24.jpg" style="zoom:50%;" />
 
 ```python
 class Solution:
@@ -342,7 +342,7 @@ class Solution:
 
 * 给出的节点不是表头，删除当前给定的节点
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/10d4294214a45a545cecb6f072dd6b01a9e090ca67bc8d22003aed2c248a6e49-file_1574907780593.png" style="zoom:67%;" />
+<img src="./assets/10d4294214a45a545cecb6f072dd6b01a9e090ca67bc8d22003aed2c248a6e49-file_1574907780593.png" style="zoom:67%;" />
 
 * 将后面的数据复制给删除节点，删除下一个节点。
 
@@ -366,7 +366,7 @@ class Solution:
 
 * 常规解法：先遍历一遍链表，计算总长度。遍历一遍删除倒数第n个节点。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/maxresdefault.jpg" style="zoom:50%;" />
+<img src="./assets/maxresdefault.jpg" style="zoom:50%;" />
 
 * 当`fast`到达最后的时候，`slow`正好指向要删除的节点的前一节点。
 

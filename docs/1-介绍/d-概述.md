@@ -41,7 +41,7 @@ print(students['2024003'])
 * 数据结构只是静态的描述了数据元素之间的关系。
 * 高效的程序需要在数据结构的基础上设计和选择算法。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/截屏2023-11-08 11.53.26.png" style="zoom:35%;" />
+<img src="./assets/截屏2023-11-08 11.53.26.png" style="zoom:35%;" />
 
 > [!note]
 >
@@ -51,7 +51,7 @@ print(students['2024003'])
 
 比特（bit）是计算机中最小的数据单位，一个比特位只有0 或1两个状态。字节（Byte）是内存基本单位，一个字节等于8个比特。每个内存的基本存储空间都有自己的地址。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/f37b7a570f9dcf0538d39dd10d4d0cbd.jpg" style="zoom:60%;" />
+<img src="./assets/f37b7a570f9dcf0538d39dd10d4d0cbd.jpg" style="zoom:60%;" />
 
 内存寻址空间
 
@@ -92,7 +92,7 @@ print(students['2024003'])
 
 数据在内存中的存储
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-01-29_10-35-35.jpg" style="zoom:55%;" />
+<img src="./assets/Xnip2026-01-29_10-35-35.jpg" style="zoom:55%;" />
 
 ## 数据结构的类型
 
@@ -109,7 +109,7 @@ flowchart LR
   1. 非线性结构是非空集。
   2. 非线性结构的一个结点可能有多个直接前驱结点和多个直接后继结点。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/202408301527018.png" style="zoom:75%;" />
+<img src="./assets/202408301527018.png" style="zoom:75%;" />
 
 > [!warning]
 >

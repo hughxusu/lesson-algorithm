@@ -10,7 +10,7 @@ $$
 $$
 如果将顶点看作节点，将边看作连接各个节点的线，上面的图可以表示为
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/linkedlist_tree_graph.png" style="zoom:70%;" />
+<img src="./assets/linkedlist_tree_graph.png" style="zoom:70%;" />
 
 图模型的应用：
 
@@ -27,7 +27,7 @@ $$
 * 在无向图中，边表示两顶点之间的“双向”连接关系，例如微信或QQ中的“好友关系”。
 * 在有向图中，边具有方向性，即$A\rightarrow B$和$B\rightarrow A$两个方向的边是相互独立的，例如微博或抖音上的“关注”与“被关注”关系。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/directed_graph.png" style="zoom:65%;" />
+<img src="./assets/directed_graph.png" style="zoom:65%;" />
 
 有向图由于不对称性，相关算法难度更大。
 
@@ -36,13 +36,13 @@ $$
 - 对于连通图，从某个顶点出发，可以到达其余任意顶点。
 - 对于非连通图，从某个顶点出发，至少有一个顶点无法到达。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/connected_graph.png" style="zoom:65%;" />
+<img src="./assets/connected_graph.png" style="zoom:65%;" />
 
 根据边的“权重”变量，可以分为有权图（weighted graph）和无权图（unweighted graph）。
 
 * 有权图每个边上都有权重变量。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/weighted_graph.png" style="zoom:65%;" />
+<img src="./assets/weighted_graph.png" style="zoom:65%;" />
 
 ### 常用术语
 
@@ -50,7 +50,7 @@ $$
 - 路径（path）：从顶点A到顶点B经过的边构成的序列被称为从A到B的“路径”。
 - 度（degree）：一个顶点拥有的边数。对于有向图，入度（in-degree）表示有多少条边指向该顶点，出度（out-degree）表示有多少条边从该顶点指出。
 
-![](https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/886021-20180604170225502-1577370842.png)
+![](./assets/886021-20180604170225502-1577370842.png)
 
 * 自环边（self-loop）：一条边的两个端点都是同一个顶点。
 * 平行边（parallel edges）：两个顶点之间存在两条或两条以上的边，这些边连接的是同一对顶点。
@@ -64,7 +64,7 @@ $$
 
 设图的顶点数量为$n$，邻接矩阵（adjacency matrix）使用一个$n\times n$大小的矩阵来表示图，每一行（列）代表一个顶点，矩阵元素代表边，用1或0表示两个顶点之间是否存在边。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/adjacency_matrix.png" style="zoom:65%;" />
+<img src="./assets/adjacency_matrix.png" style="zoom:65%;" />
 
 * 对于无向图，两个方向的边等价，此时邻接矩阵关于主对角线对称。
 * 使用邻接矩阵表示图时，可以直接访问矩阵元素以获取边，因此增删查改操作的效率很高，时间复杂度均为$O(1)$。
@@ -155,7 +155,7 @@ class GraphAdjMat:
 
 邻接表（adjacency list）使用$n$个链表来表示图，链表节点表示顶点。第$i$个链表对应顶点$i$，其中存储了该顶点的所有邻接顶点。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/adjacency_list.png" style="zoom:65%;" />
+<img src="./assets/adjacency_list.png" style="zoom:65%;" />
 
 * 邻接表仅存储实际存在的边，而边的总数通常远小于$n^2$，因此它更加节省空间。
 * 在邻接表中需要通过遍历链表来查找边，因此其时间效率不如邻接矩阵。
@@ -229,7 +229,7 @@ class GraphAdjList:
 
 * 删除顶点，要删除对应的键值对，遍历其他顶点集合，移除对应的顶点值。
 
-![](https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/6821009975_db90b7b53f_z.jpg)
+![](./assets/6821009975_db90b7b53f_z.jpg)
 
 根据边的密度分类
 
@@ -249,7 +249,7 @@ class GraphAdjList:
 
 深度优先遍历是一种优先走到底、无路可走再回头的遍历方式。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/graph_dfs.png" style="zoom:65%;" />
+<img src="./assets/graph_dfs.png" style="zoom:65%;" />
 
 深度优先遍历可以采用递归算法实现：
 
@@ -279,7 +279,7 @@ def dfs(graph, visited, res, vet):
 
 广度优先遍历是一种由近及远的遍历方式，从某个节点出发，始终优先访问距离最近的顶点，并一层层向外扩张。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/graph_bfs.png" style="zoom:65%;" />
+<img src="./assets/graph_bfs.png" style="zoom:65%;" />
 
 广度优先遍历通常借助队列来实现：
 
@@ -317,7 +317,7 @@ def bfs(graph, res, start_vet):
 * 任何的正整数$n$，都可以表示成完全平方数的和，可以用1表示。
 * 从当前数字中尝试减去所有可能的完全平方数，生成下一层搜索的节点。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Perfect-Squares.jpg" style="zoom: 50%;" />
+<img src="./assets/Perfect-Squares.jpg" style="zoom: 50%;" />
 
 * 如果你第一次遇到某个数字$x$，当前走的路径一定是从起点到$x$的最短路径。
   1. 路径A：$13\rightarrow 12 \rightarrow 8$ （步数 = 3）

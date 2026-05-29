@@ -7,7 +7,7 @@
 2. 大顶堆（max heap）：任意节点的值 $\ge$ 其子节点的值。
    * 堆顶元素是最大值。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/min_heap_and_max_heap.png" style="zoom:60%;" />
+<img src="./assets/min_heap_and_max_heap.png" style="zoom:60%;" />
 
 ## 堆的实现
 
@@ -23,7 +23,7 @@
 2. 它的右子节点下标是：`2 * i + 2`。
 3. 它的父节点下标是：`(i - 1) // 2` (向下取整)。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/representation_of_heap.png" style="zoom:60%;" />
+<img src="./assets/representation_of_heap.png" style="zoom:60%;" />
 
 定义堆大顶堆和常用方法
 
@@ -82,7 +82,7 @@ class MaxHeap:
 2. 不断比较子节点与父节点，如果子节点大于父节点，则交换。
 3. 重复此过程，直到子节点小于其父节点。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/1nhsdp3wi4.png" style="zoom:75%;" />
+<img src="./assets/1nhsdp3wi4.png" style="zoom:75%;" />
 
 ```python
 import random
@@ -113,7 +113,7 @@ class MaxHeap:
 3. 不断比较父节点与子节点，如果父节点小于子节点，则交换。
 4. 重复此过程，直到父节点大于其子节点。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/e7518rwhvf.jpeg" style="zoom:75%;" />
+<img src="./assets/e7518rwhvf.jpeg" style="zoom:75%;" />
 
 ```python
 class MaxHeap:
@@ -152,7 +152,7 @@ class MaxHeap:
    3. 每当堆化一个节点后，以该节点为根节点的子树就形成一个合法的子堆。
    4. 由于是倒序遍历，因此堆是“自下而上”构建的。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/heap_push_step1.png" style="zoom:65%;" />
+<img src="./assets/heap_push_step1.png" style="zoom:65%;" />
 
 ```python
 class MaxHeap:
@@ -243,7 +243,7 @@ print(f"当前处理: {task}")
 
 4. 最终队列中剩下的元素，就是前K个出现频率最高的元素。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/image_88683118541671783335517.png" style="zoom: 45%;" />
+<img src="./assets/image_88683118541671783335517.png" style="zoom: 45%;" />
 
 ```python
 import heapq

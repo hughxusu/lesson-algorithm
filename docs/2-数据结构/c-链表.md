@@ -4,13 +4,13 @@
 
 单向链表的尾节点指向头节点（首尾相接），则得到一个环形链表。在环形链表中，任意节点都可以视作头节点。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/28-循环单链表.JPG" style="zoom:25%;" />
+<img src="./assets/28-循环单链表.jpeg" style="zoom:25%;" />
 
 ### 创建循环链表
 
 循环链表中只有一个节点，尾指针指向自己。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/29-循环单链表-空表.jpg" style="zoom:15%;" />
+<img src="./assets/29-循环单链表-空表.jpg" style="zoom:15%;" />
 
 ```python
 class SingleNode:
@@ -225,7 +225,7 @@ class SingleCycleLinkList:
 
 双链表节点
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/23-双链表结点.jpg" style="zoom: 25%;" />
+<img src="./assets/23-双链表结点.jpg" style="zoom: 25%;" />
 
 ```python
 class Node:
@@ -237,7 +237,7 @@ class Node:
 
 双链表
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/22-单链表与双链表.JPG" style="zoom:25%;" />
+<img src="./assets/22-单链表与双链表.jpeg" style="zoom:25%;" />
 
 ### 双链表的实现
 
@@ -256,7 +256,7 @@ class DoubleLinkList:
             self.length += 1
 ```
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/ukk8punw7s.jpeg" style="zoom:80%;" />
+<img src="./assets/ukk8punw7s.jpeg" style="zoom:80%;" />
 
 1. 前端增加节点
 
@@ -327,7 +327,7 @@ class DoubleLinkList:
         return False
 ```
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/27-双链表删除.JPG" style="zoom:25%;" />
+<img src="./assets/27-双链表删除.jpeg" style="zoom:25%;" />
 
 5. 按值删除
 
@@ -402,7 +402,7 @@ class DoubleLinkList:
 
 **[21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/)**
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/21-2.png" style="zoom:60%;" />
+<img src="./assets/21-2.png" style="zoom:60%;" />
 
 * 将列表节点较小的值结在`dummy`后，然后移动列表头。直到`list1`和`list2`都为空。
 * `dummy`最开始为`cur`，当有节点接入后，`cur`后移。

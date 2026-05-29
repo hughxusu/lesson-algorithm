@@ -10,14 +10,14 @@
 
 1. 顺序存储：字符被依次存放在⼀组连续的存储单元⾥。
 
-![](https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/v2-c2d1afd1b23e9ed9f4fc9468a614698e_1440w.jpg)
+![](./assets/v2-c2d1afd1b23e9ed9f4fc9468a614698e_1440w.jpg)
 
 * 非紧缩格式：每个单元存放多个字符，如：UTF-32（任何字符都雷打不动地占用4个字节）。
 * 紧缩格式：每个单元只存一个字符，如：UTF-8编码。
 
 2. 链表存储：链串中的一个结点可以存储多个字符。通常将链串中每个结点所存储的字符个数称为结点大小。
 
-![](https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/v2-6cb0297a56656a1118dabe901654ca17_1440w.jpg)
+![](./assets/v2-6cb0297a56656a1118dabe901654ca17_1440w.jpg)
 
 > [!warning]
 >
@@ -32,11 +32,11 @@
 
 1. 字符串相等：当且仅当两个串的长度相等并且各个对应位置上的字符都相同时，这两个串才是相等的。
 
-![](https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/v2-13512ec47599d0357e8198a2ebc1a6f3_1440w.jpg)
+![](./assets/v2-13512ec47599d0357e8198a2ebc1a6f3_1440w.jpg)
 
 2. 字符串匹配。在字符串A中查找字符串B，那字符串A就是主串，字符串B就是模式串。主串的长度记作$n$，模式串的长度记作$m$，一般是在主串查找模式串，所以$n>m$。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/v2-837027ab5d183b434c88e43c7df0c417_1440w.jpg" style="zoom:45%;" />
+<img src="./assets/v2-837027ab5d183b434c88e43c7df0c417_1440w.jpg" style="zoom:45%;" />
 
 ## 字符串匹配算法
 
@@ -46,7 +46,7 @@
 
 BF算法采用穷举的方法进行字符串匹配。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUxMDYxNQ==,size_16,color_FFFFFF,t_70.png" style="zoom:45%;" />
+<img src="./assets/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUxMDYxNQ==,size_16,color_FFFFFF,t_70.png" style="zoom:45%;" />
 
 1. 使用双循环方式实现。
 
@@ -80,7 +80,7 @@ def bf_search_slice(pattern: str, text: str) -> int:
 
 3. 使用单循环方法
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/str-single-loop.jpg" style="zoom: 30%;" />
+<img src="./assets/str-single-loop.jpg" style="zoom: 30%;" />
 
 ```python
 def bf_search_single_loop(pattern: str, text: str) -> int:
@@ -123,7 +123,7 @@ KMP算法的核心思想是，利用匹配失败后的信息，不让主串指�
 1. 最长相等前后缀。
    * 前后缀长度一定小于字符串本身，所以一个字母`a`前后缀均为空集。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-02-13_19-11-29.jpg" style="zoom:33%;" />
+<img src="./assets/Xnip2026-02-13_19-11-29.jpg" style="zoom:33%;" />
 
 > [!warning]
 >
@@ -131,7 +131,7 @@ KMP算法的核心思想是，利用匹配失败后的信息，不让主串指�
 
 2. next数组。用于字符串匹配的数组，由最长相等前后缀构成。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-02-13_19-26-15.jpg" style="zoom:33%;" />
+<img src="./assets/Xnip2026-02-13_19-26-15.jpg" style="zoom:33%;" />
 
 ```python
 def get_pm_next(pattern):
@@ -225,7 +225,7 @@ print(f"Next 数组: {get_next(pattern)}")
    2. 匹配成功`i`和`j`都加1。
    3. 匹配不成功根据`next_arr`数组回溯。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/kmp-search.png" style="zoom:90%;" />
+<img src="./assets/kmp-search.png" style="zoom:90%;" />
 
 ```python
 def kmp_search(pattern, text):
@@ -442,7 +442,7 @@ class Solution:
 * 增加窗口长度后发现重复字符，移动`lo`游标，跳过重复的字符。
 * 使用`set`记录字符串是否重复。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/longest_substring.png" style="zoom:55%;" />
+<img src="./assets/longest_substring.png" style="zoom:55%;" />
 
 ```python
 class Solution:

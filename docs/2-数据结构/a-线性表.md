@@ -14,7 +14,7 @@
 
 顺序表和链表都是线性的存储结构，统称为线性表。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/v2-d6bd7f99279d2f8412eb4c7e1360b766_r.jpg" style="zoom:30%;" />
+<img src="./assets/v2-d6bd7f99279d2f8412eb4c7e1360b766_r.jpg" style="zoom:30%;" />
 
 ## 顺序表
 
@@ -25,7 +25,7 @@
 
 ### 一体式结构
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/fccdd77d8ce1ee9584bcf29974b386af.png" style="zoom:70%;" />
+<img src="./assets/fccdd77d8ce1ee9584bcf29974b386af.png" style="zoom:70%;" />
 
 Python中可以使用`array`包实现一体式结构。
 
@@ -52,7 +52,7 @@ print(f"数组长度: {len(arr)}")
 > arr = [100, 'a', 'b']
 > ```
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-01-29_10-35-35.jpg" style="zoom:55%;" />
+<img src="./assets/Xnip2026-01-29_10-35-35-20260529111222446.jpg" style="zoom:55%;" />
 
 由于列表中数据大小不固定，偏移量也不确定。无法通过偏移的方式查找。
 
@@ -65,7 +65,7 @@ print(f"数组长度: {len(arr)}")
 >
 > 地址可以看做是一个16进制的数值编号，也可以保存在内存中。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/33bfb28e64b8314e1c9f74defd1ba356.png" style="zoom:75%;" />
+<img src="./assets/33bfb28e64b8314e1c9f74defd1ba356.png" style="zoom:75%;" />
 
 Python的列表就是采取这种存储方式。
 
@@ -82,7 +82,7 @@ Python的列表就是采取这种存储方式。
 
 顺序表的空间存储分布
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/Xnip2026-02-02_13-46-46.jpg" style="zoom: 50%;" />
+<img src="./assets/Xnip2026-02-02_13-46-46.jpg" style="zoom: 50%;" />
 
 ### 顺序表的扩充
 
@@ -97,13 +97,13 @@ Python的列表就是采取这种存储方式。
 
 顺序表存储在连续的空间，则只能整体搬迁。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/v2-12a50fcc388e40f81a3f2eeca9543537_1440w.jpg" style="zoom:65%;" />
+<img src="./assets/v2-12a50fcc388e40f81a3f2eeca9543537_1440w.jpg" style="zoom:65%;" />
 
 ### 顺序表增加与删除元素
 
 1. 增加元素
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/add-arr.png" style="zoom:40%;" />
+<img src="./assets/add-arr.png" style="zoom:40%;" />
 
 * 尾端加入元素，时间复杂度为$O(1)$。
 * 非保序的加入元素（不常见），时间复杂度为$O(1)$。
@@ -111,7 +111,7 @@ Python的列表就是采取这种存储方式。
 
 2. 删除元素
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/del-arr.png" style="zoom:40%;" />
+<img src="./assets/del-arr.png" style="zoom:40%;" />
 
 * 删除表尾元素，时间复杂度为$O(1)$。
 * 非保序的元素删除（不常见），时间复杂度为$O(1)$。
@@ -135,8 +135,7 @@ Python的列表就是采取这种存储方式。
    2. 将非零元素填入原数组。
    3. 将原数组后面的元素设置为0。
 
-
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/17048bd108d34e08.jpg" style="zoom:35%;" />
+<img src="./assets/17048bd108d34e08.jpg" style="zoom:35%;" />
 
 ```python
 class Solution:
@@ -159,7 +158,7 @@ class Solution:
    1. 定义两个游标，一个游标变量数组，一个游标记非0元素。
    2. 当元素为非零元素时，将非零元素向前交换。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/develop/images/parctice/17048bd12a1a74ee.jpg" style="zoom: 50%;" />
+<img src="./assets/17048bd12a1a74ee.jpg" style="zoom: 50%;" />
 
 ```python
 class Solution:
@@ -218,7 +217,7 @@ class Solution:
   * 滑动窗口为`[lo, hi]`，统计滑动窗口内的值是否满足条件。
   * 其`lo == hi`时表示窗口内只有一个元素。
 
-<img src="https://raw.githubusercontent.com/hughxusu/lesson-algorithm/refs/heads/develop/images/parctice/leetcode-209.jpg" style="zoom:70%;" />
+<img src="./assets/leetcode-209.jpg" style="zoom:70%;" />
 
 ```python
 class Solution:
