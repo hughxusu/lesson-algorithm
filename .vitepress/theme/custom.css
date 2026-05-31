@@ -1,3 +1,16 @@
+:root {
+  --vp-layout-max-width: 1600px;
+  --vp-content-width: 1480px;
+}
+
+.VPDoc.has-aside .content-container {
+  max-width: 100% !important;
+}
+
+.VPDoc:not(.has-sidebar) .content {
+  max-width: 100% !important;
+}
+
 .vp-doc .custom-block .custom-block-title {
   font-size: 0 !important;
   display: flex;
