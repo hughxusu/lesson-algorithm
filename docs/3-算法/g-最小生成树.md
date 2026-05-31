@@ -106,7 +106,7 @@ class GraphAdjList:
 
 把图中的结点分为两个部分，称为一个切分（Cut）。如果一个边的两个端点，属于切分（Cut）不同的两边，这个边称为横切边（Crossing Edge）。
 
-<img src="./assets/7bb44c5eb8704bd58ba4d5ab7dd6e895~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp" style="zoom:30%;" />
+<img src="./assets/CrossingEdge.jpg" style="zoom:50%;" />
 
 切分定理：在一幅加权图中，给定任意切分，所有横切边中权重最小的边一定属于图的最小生成树。
 
