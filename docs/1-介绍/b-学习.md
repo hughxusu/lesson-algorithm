@@ -66,7 +66,7 @@ leetcode的使用
 * 建立几个简单的测试用例。
 * 不要忘记穷举法，穷举法通常是思考的起点。
 
-> [!think]
+> [!tip]
 >
 > 在一个字符串中寻找没有重复字母的最长子串，如：abcabcbb，最长子串为abc？
 
@@ -87,7 +87,7 @@ def longest_substring_brute(s):
         print()
 ```
 
-> [!note]
+> [!important]
 >
 > 理论上任何问题都存在一个穷举法。
 

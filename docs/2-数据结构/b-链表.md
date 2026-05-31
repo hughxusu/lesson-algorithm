@@ -106,7 +106,7 @@ class SingleLinkList:
 
    <img src="./assets/link-unshift.png" style="zoom:60%;" />
 
-> [!alert]
+> [!Caution]
 >
 > 不能打乱上述操作顺序。
 
@@ -174,7 +174,7 @@ class SingleLinkList:
 
 * 指定位置插入的时间复杂度为$O(n)$。
 
-> [!note]
+> [!important]
 >
 > 插入节点一般流程：
 >
@@ -251,7 +251,7 @@ class SingleLinkList:
         return -1
 ```
 
-> [!note]
+> [!important]
 >
 > 删除和查找的时间复杂度$O(n)$。
 
@@ -310,7 +310,7 @@ class Solution:
         return dummy.next
 ```
 
-> [!think]
+> [!tip]
 >
 > 如果上述代码不用虚拟头节点方法，应该如何修改？比较两种方法的优劣。
 

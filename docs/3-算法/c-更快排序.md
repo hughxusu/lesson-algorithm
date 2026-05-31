@@ -1,6 +1,6 @@
 # 更快的排序
 
-> [!note]
+> [!important]
 >
 > 数学上已经证明了，基于比较的排序算法，最坏情况下的最低复杂度就是$O(n\log n)$。
 
@@ -95,7 +95,7 @@ def quick_sort_universal_stack(arr):
 
 快速排序为非稳定排序：数组划分时，左边数组和基准数相等的值，可能会被交换至右侧。
 
-> [!think]
+> [!tip]
 >
 > 如何使用循环代替递归完成快速排序。
 
@@ -108,7 +108,7 @@ def quick_sort_universal_stack(arr):
 
 <img src="./assets/merge_sort_overview.png" style="zoom:60%;" />
 
-> [!note]
+> [!important]
 >
 > 归并过程的访问顺序是：
 >
@@ -213,7 +213,7 @@ def heap_sort(nums):
 
 ## 相关问题
 
-> [!think]
+> [!tip]
 >
 > 有一个字符串数组，将字符串数组中的每个字符串按照字母排序，之后再将整个字符串数组按照字典顺序排序，求整个操作的时间复杂度？
 

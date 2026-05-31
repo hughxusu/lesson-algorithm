@@ -215,7 +215,7 @@ class SingleCycleLinkList:
             tail.next = self.head
 ```
 
-> [!think]
+> [!tip]
 >
 > 使用逻辑判断，重构上面代码，应该如何写？
 

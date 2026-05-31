@@ -16,7 +16,7 @@ def fib(n):
         return fib(n - 2) + fib(n - 1)
 ```
 
-> [!think]
+> [!tip]
 >
 > 为什么斐波那契数列求解过程这么慢？
 
@@ -68,7 +68,7 @@ print(f'fib_memo(20) 调用了 {fib_memo.counter} 次')
   * 如果存在直接返回，`memo`中记录过的值，跳过递归。
 * 使用记忆化搜索的方式，函数的调用次数是$2n-1$次。
 
-> [!note]
+> [!important]
 >
 > 通过记忆化搜索，所有重叠子问题都只需计算一次，时间复杂度优化至$O(n)$，空间复杂度为$O(n)$。记忆化搜索是“以空间换时间”的典型应用。
 
@@ -108,7 +108,7 @@ print(f'fib_dynamic(20) = {fib_dynamic(20)}')
 
 Dynamic Programming（动态规划）中Programming是指一种表格规划方法，Dynamic表示状态转移过程。Dynamic Programming可以理解为状态转移表格或递推填表法。
 
-> [!think]
+> [!tip]
 >
 > 思考[70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/)的动态规划求解。
 
@@ -120,7 +120,7 @@ Dynamic Programming（动态规划）中Programming是指一种表格规划方�
 
 <img src="./assets/l343.jpg" style="zoom: 50%;" />
 
-> [!note]
+> [!important]
 >
 > 最优子结构：通过求子问题的最优解，可以获得原问题的最优解。
 
@@ -184,7 +184,7 @@ class Solution:
 
 * `j * (i - j)`将数值`i`分割为`j`和`i-j`的两部分。
 
-> [!note]
+> [!important]
 >
 > 解决动态规划问题的路径：
 >
@@ -277,7 +277,7 @@ class Solution:
         return dp[n-1]
 ```
 
-> [!think]
+> [!tip]
 >
 > 上面的状态转移方程不唯一，思考还有什么其他状态转移方程。
 
@@ -285,7 +285,7 @@ class Solution:
 
 背包问题是动态规划中最常见的问题形式，且具有很多变体，如：完全背包问题、多重背包问题等。
 
-> [!think]
+> [!tip]
 >
 > 给定$n$个物品，第$i$个物品的重量为$wgt[i-1]$ 、价值为$val[i-1]$，和一个容量为$cap$的背包。每个物品只能选择一次，问在限定背包容量下能放入物品的最大价值。
 
@@ -297,7 +297,7 @@ class Solution:
 * 判断每一种组合是否超过容量，保留没有超过容量的组合。
 * 计算可能组合的价值，选择价值最大的。
 
-> [!think]
+> [!tip]
 >
 > 优先放入平均价值最高的物品是否可行？
 
