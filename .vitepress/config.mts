@@ -52,6 +52,7 @@ export default withMermaid({
           { text: '动态规划', link: '/docs/3-算法/e-动态规划.md' },
           { text: '贪心算法', link: '/docs/3-算法/f-贪心算法.md' },
           { text: '最小生成树', link: '/docs/3-算法/g-最小生成树.md' },
+          { text: '最短路径', link: '/docs/3-算法/h-最短路径.md' },
         ]
       }
     ],
